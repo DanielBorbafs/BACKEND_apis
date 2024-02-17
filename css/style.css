@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bg-image {
+    background-image: url('../images/backgroundSection.png');
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-entrar {
+    padding: 6px;
+    width: 90px;
+    height: 40px;
+    background: none;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.btn-anunciar {
+    padding: 6px;
+    width: 180px;
+    height: 40px;
+    background: rgb(202, 29, 6);
+    background: linear-gradient(90deg, rgba(202, 29, 6, 1) 0%, rgba(224, 91, 49, 1) 35%);
+    border: none;
+    color: #fff;
+}
+
+.section-texts {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-texts span {
+    color: #fff;
+}
+
+.section-texts h1 {
+    color: rgb(252, 144, 84);
+    color: linear-gradient(90deg, rgba(252, 144, 84, 1) 0%, rgba(229, 74, 100, 1) 35%);
+    font-size: 56px;
+}
+
+.section-texts p {
+    color: #fff;
+    font-size: 22px;
+}
+
+.input-component {
+    margin-top: 22px; /* Alterado de .input-section para .input-component */
+}
+
+.logo-consoles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    order: 100;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+.input-component select {
+    font-size: 16px;
+    background-color: #675f5f;
+    height: 40px;
+    color: white;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+.input-component select>option {
+    background-color: #675f5f3c;
+    border: none;
+    text-align: center;
+    font-size: 16px;
+}
+
+@media (max-width: 450px) {
+    .login-btns {
+        display: none;
+    }
+
+    .logo-img {
+        max-width: 64px;
+    }
+
+    .bg-image {
+        flex-direction: column;
+    }
+
+    .logo-consoles {
+        margin-top: 150px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .section-texts {
+        margin-top: 16px;
+    }
+
+    .section-texts h1 {
+        font-size: 32px;
+    }
+
+    .section-texts p {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
+    .input-component select {
+        margin-top: 18px;
+        height: 30px;
+    }
+}
