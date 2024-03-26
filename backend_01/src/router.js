@@ -1,6 +1,7 @@
 const express = require ('express');
-const router = express.Router()
+const clienteController = require('./controllers/clienteControllers')
+const router = express.Router();
 
-router.get('/clientes', (req, res) => res.status(200).send('O Router esta funcionando'));
+router.get('/clientes', clienteController.getAll);
 
 module.exports = router;
